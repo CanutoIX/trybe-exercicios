@@ -12,11 +12,16 @@ html {
     box-sizing: inherit;
 }
 
-body {}
+body {
+    font-size: larger;
+    margin: 5%;
+}
 
 article {}
 
-h1 {}
+h1 {
+    font-size: large;
+}
 
 h2 {}
 
@@ -34,4 +39,10 @@ figure {
 
 figcaption {
     font-size: .8em;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: red;
+    }
 }
