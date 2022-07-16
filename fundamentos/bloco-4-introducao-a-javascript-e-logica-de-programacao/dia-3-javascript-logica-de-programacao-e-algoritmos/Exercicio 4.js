@@ -1,13 +1,15 @@
-function largestPrimeFactor(n){
-    let i=2;
-    while (i<=n){
-        if (n%i == 0){
-            n/=i;    
-        }else{
-            i++;
+let biggestPrimeNumber = 0;
+
+for (let currentNumber = 2; currentNumber <= 50; currentNumber += 1) {
+    let isPrime = true;
+    for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+        if (currentNumber % currentDivisor === 0) {
+            isPrime = false;
         }
     }
-    console.log(i);
+    if (isPrime) {
+        biggestPrimeNumber = currentNumber;
     }
-    let a = 50; 
-    largestPrimeFactor(a)
+}
+
+console.log(biggestPrimeNumber);
