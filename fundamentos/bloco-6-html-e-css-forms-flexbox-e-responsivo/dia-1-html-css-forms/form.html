@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybe Trip</title>
+    <link type="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>Trybe Trip</h1>
+    <form>
+        <label for="nome-completo">Nome: </label><input type="text" name="form-tt" id="nome-completo"
+            placeholder="Nome completo" minlength="10" maxlength="40"><br>
+        <label for="email">Email: </label> <input type="email" name="form-tt" id="email"
+            placeholder="seuemail@email.com" minlength="10" maxlength="50"><br>
+        <label>Destinos favoritos: </label><br>
+        <label for="cid">Cidade </label><input type="checkbox" name="form-tt" id="cid">
+        <label for="cid">Campo </label><input type="checkbox" name="form-tt" id="cam">
+        <label for="cid">Praia </label><input type="checkbox" name="form-tt" id="pra">
+        <label for="cid">Montanhas </label><input type="checkbox" name="form-tt" id="mon"><br>
+        <label for="motivo">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
+        <textarea name="form-tt" id="motivo" maxlength="500"></textarea><br>
+        <label for="data">Qual a melhor data para realizar sua viagem?</label><br>
+        <input type="date" name="form-tt" id="data"><br> 
+        Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br>
+        <label for="escolha">Sim </label><input type="radio" name="form-tt" id="escolha">
+        <label for="escolha2">Não </label><input type="radio" name="form-tt" id="escolha2"><br>
+        <label for="auth">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label> <input type="checkbox" name="form-tt" id="auth"><br>
+        <input type="submit" id="botao" value="Enviar">
+        <input type="reset">
+
+
+
+
+    </form>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
