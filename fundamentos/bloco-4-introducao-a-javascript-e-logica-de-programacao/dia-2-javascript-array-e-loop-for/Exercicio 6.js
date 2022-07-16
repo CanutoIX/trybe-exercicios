@@ -1,9 +1,14 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impar = [];
+let result = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-    if (impar < numbers[i]) {
-        maior = numbers[i]
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        result += 1;
     }
 }
-console.log(maior);
+
+if (result === 0) {
+    console.log('nenhum valor ímpar encontrado');
+} else {
+    console.log(result);
+}

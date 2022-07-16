@@ -1,5 +1,10 @@
-let impar = 0
-for (let i = impar; i <= 25; i++) {
-impar = impar[i];
+let numbers = [];
+
+for (let index = 1; index <= 25; index += 1) {
+    numbers.push(index);
 }
-console.log(impar);
+
+console.log(numbers);
+for (let index = 0; index < numbers.length; index += 1) {
+    console.log(numbers[index] / 2);
+};
